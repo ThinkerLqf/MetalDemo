@@ -9,6 +9,8 @@
 #import "ViewController.h"
 #import "HorseRaceLampVC.h"
 #import "TriangleViewController.h"
+#import "Demo3Adder.h"
+#import <MetalKit/MetalKit.h>
 
 @interface ViewController ()
 
@@ -17,33 +19,108 @@
 @implementation ViewController
 
 - (void)viewDidLoad {
+    
     [super viewDidLoad];
     
-    UIButton *btn1 = [UIButton buttonWithType:UIButtonTypeSystem];
-    [btn1 setTitle:@"渐变LED灯" forState:UIControlStateNormal];
-    [btn1 setFrame:CGRectMake(50, 200, 200, 44)];
-    [btn1 addTarget:self action:@selector(_horseRaceLamp) forControlEvents:UIControlEventTouchUpInside];
-    [btn1 setTitleColor:[UIColor colorWithRed:32/255.0 green:170/255.0 blue:226/255.0 alpha:1] forState:UIControlStateNormal];
-    [self.view addSubview:btn1];
+    CGSize screenSize = [UIScreen mainScreen].bounds.size;
+    CGFloat scrollY = 200;
+    CGFloat scrollBottom = 100;
+    CGRect scrollRect = CGRectMake(0, scrollY, screenSize.width, screenSize.height - scrollY - scrollBottom);
+    UIScrollView *scrollView = [[UIScrollView alloc] initWithFrame:scrollRect];
+    scrollView.backgroundColor = [UIColor colorWithRed:1 green:0.776 blue:0.286 alpha:0.1];
+    [self.view addSubview:scrollView];
     
-    UIButton *btn2 = [UIButton buttonWithType:UIButtonTypeSystem];
-    [btn2 setTitle:@"三角形" forState:UIControlStateNormal];
-    [btn2 setFrame:CGRectMake(50, 300, 200, 44)];
-    [btn2 addTarget:self action:@selector(_triangle) forControlEvents:UIControlEventTouchUpInside];
-    [btn2 setTitleColor:[UIColor colorWithRed:32/255.0 green:170/255.0 blue:226/255.0 alpha:1] forState:UIControlStateNormal];
-    [self.view addSubview:btn2];
+    CGFloat contentHeight = 0.f;
+    
+    CGFloat x = 0.f;
+    CGFloat y1 = 20.f;
+    CGFloat w = screenSize.width;
+    CGFloat h = 44.f;
+    CGRect rect1 = CGRectMake(x, y1, w, h);
+    
+    // btn1
+    UIButton *btn1 = [self _qfButtonWithTitle:@"渐变LED灯"
+                                      frame:rect1
+                                     action:@selector(_qfHorseRaceLamp)];
+    [scrollView addSubview:btn1];
+    
+    contentHeight += h;
+    
+    // btn2
+    CGFloat vGap = 0.f;
+    CGFloat y2 = y1 + h + vGap;
+    CGRect rect2 = CGRectMake(x, y2, w, h);
+    
+    UIButton *btn2 = [self _qfButtonWithTitle:@"三角形(错误示范)"
+                                      frame:rect2
+                                     action:@selector(_qfTriangle)];
+    [btn2 setTitleColor:[UIColor lightGrayColor] forState:UIControlStateDisabled];
+    [btn2 setEnabled:NO];
+    [scrollView addSubview:btn2];
+    
+    contentHeight += (vGap + h);
+    
+    // btn3
+    CGFloat y3 = y2 + vGap + h;
+    CGRect rect3 = CGRectMake(x, y3, w, h);
+    
+    UIButton *btn3 = [self _qfButtonWithTitle:@" 官1:Performing Calculations on a GPU\n备注:只能真机"
+                                      frame:rect3
+                                     action:@selector(_qfPerformingCalculationsOnAGPU)];
+    [btn3.titleLabel setNumberOfLines:2];
+    [scrollView addSubview:btn3];
+    
+    contentHeight += (vGap + h);
+    
+    [scrollView setContentSize:CGSizeMake(screenSize.width, MAX(contentHeight, scrollRect.size.height))];
+}
+
+#pragma mark - Action
+
+// C形式本尊 本例用Metal实现
+void add_arrays(const float* inA,
+                const float* inB,
+                float* result,
+                int length) {
+    for (int index = 0; index < length; index++) {
+        result[index] = inA[index] + inB[index];
+    }
+}
+
+- (void)_qfPerformingCalculationsOnAGPU {
+    
+    id <MTLDevice> device = MTLCreateSystemDefaultDevice();
+    
+    Demo3Adder *adder = [[Demo3Adder alloc] initWithDevice:device];
+    
+    [adder beginShow];
     
 }
 
-- (void)_triangle {
+#pragma mark 2
+- (void)_qfTriangle {
     TriangleViewController *triangleVC = [[TriangleViewController alloc] init];
     [self.navigationController pushViewController:triangleVC animated:YES];
 }
 
-- (void)_horseRaceLamp {
+#pragma mark 1
+- (void)_qfHorseRaceLamp {
     HorseRaceLampVC *vc = [[HorseRaceLampVC alloc] init];
     [self.navigationController pushViewController:vc animated:YES];
 }
 
+#pragma mark - Button
+
+- (UIButton *)_qfButtonWithTitle:(NSString *)title frame:(CGRect)frame action:(SEL)sel {
+    UIButton *btn = [UIButton buttonWithType:UIButtonTypeSystem];
+    [btn setTitle:title forState:UIControlStateNormal];
+    [btn setFrame:frame];
+    [btn addTarget:self action:sel forControlEvents:UIControlEventTouchUpInside];
+    UIColor *titleColor = [UIColor colorWithRed:0.125 green:0.667 blue:0.886 alpha:1];
+    [btn setTitleColor:titleColor forState:UIControlStateNormal];
+    [btn setContentHorizontalAlignment:UIControlContentHorizontalAlignmentRight];
+    [btn setTitleEdgeInsets:UIEdgeInsetsMake(0, 20, 0, 20)];
+    return btn;
+}
 
 @end
