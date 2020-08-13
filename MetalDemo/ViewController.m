@@ -10,6 +10,7 @@
 #import "HorseRaceLampVC.h"
 #import "TriangleViewController.h"
 #import "Demo3Adder.h"
+#import "DVCViewController.h"
 #import <MetalKit/MetalKit.h>
 
 @interface ViewController ()
@@ -64,11 +65,21 @@
     CGFloat y3 = y2 + vGap + h;
     CGRect rect3 = CGRectMake(x, y3, w, h);
     
-    UIButton *btn3 = [self _qfButtonWithTitle:@" 官1:Performing Calculations on a GPU\n备注:只能真机"
+    UIButton *btn3 = [self _qfButtonWithTitle:@" 官1:Performing Calculations on a GPU.\n备注:只能真机"
                                       frame:rect3
                                      action:@selector(_qfPerformingCalculationsOnAGPU)];
     [btn3.titleLabel setNumberOfLines:2];
     [scrollView addSubview:btn3];
+    
+    contentHeight += (vGap + h);
+    
+    // btn4
+    CGFloat y4 = y3 + vGap + h;
+    CGRect rect4 = CGRectMake(x, y4, w, h);
+    UIButton *btn4 = [self _qfButtonWithTitle:@"官2:Using Metal to Draw a View’s Contents"
+                                        frame:rect4
+                                       action:@selector(_qfUsingMetalToDrawAViewContents)];
+    [scrollView addSubview:btn4];
     
     contentHeight += (vGap + h);
     
@@ -77,6 +88,14 @@
 
 #pragma mark - Action
 
+#pragma mark - 官方demo 2
+
+- (void)_qfUsingMetalToDrawAViewContents {
+    DVCViewController *vc = [[DVCViewController alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
+#pragma mark - 官方demo 1
 // C形式本尊 本例用Metal实现
 void add_arrays(const float* inA,
                 const float* inB,
@@ -97,13 +116,13 @@ void add_arrays(const float* inA,
     
 }
 
-#pragma mark 2
+#pragma mark TriangleView
 - (void)_qfTriangle {
     TriangleViewController *triangleVC = [[TriangleViewController alloc] init];
     [self.navigationController pushViewController:triangleVC animated:YES];
 }
 
-#pragma mark 1
+#pragma mark HorseRaceLamp
 - (void)_qfHorseRaceLamp {
     HorseRaceLampVC *vc = [[HorseRaceLampVC alloc] init];
     [self.navigationController pushViewController:vc animated:YES];

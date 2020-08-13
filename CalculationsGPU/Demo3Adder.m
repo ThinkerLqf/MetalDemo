@@ -132,7 +132,7 @@ const unsigned int bufferSize = arrayLength * sizeof(float);
     assert(commandBuffer != nil);
     
     [commandBuffer addCompletedHandler:^(id<MTLCommandBuffer> _Nonnull cb) {
-        NSLog(@"aaa");
+        NSLog(@"ccc");
     }];
     
     // 开始计算过程

@@ -17,11 +17,14 @@
 		AA03493B24D7F09700E9E964 /* MetalDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = AA03493A24D7F09700E9E964 /* MetalDemoUITests.m */; };
 		AA03494A24D7FF6A00E9E964 /* HorseRaceLampVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AA03494924D7FF6A00E9E964 /* HorseRaceLampVC.m */; };
 		AA03494D24D81BDF00E9E964 /* HorseRaceLampRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = AA03494C24D81BDF00E9E964 /* HorseRaceLampRenderer.m */; };
+		AA12BEDA24E4DC270011F244 /* DVCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA12BED824E4DC270011F244 /* DVCViewController.m */; };
+		AA12BEDB24E4DC270011F244 /* DVCViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA12BED924E4DC270011F244 /* DVCViewController.xib */; };
 		AA3F7B0A24D9707E00B2519E /* TriangleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA3F7B0924D9707E00B2519E /* TriangleViewController.m */; };
 		AA3F7B0E24D972D400B2519E /* TriangleShader.metal in Sources */ = {isa = PBXBuildFile; fileRef = AA3F7B0D24D972D400B2519E /* TriangleShader.metal */; };
 		AA3F7B1124D97BB200B2519E /* TriangleRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = AA3F7B1024D97BB200B2519E /* TriangleRenderer.m */; };
 		AA7690B824E2943200464683 /* Demo3.metal in Sources */ = {isa = PBXBuildFile; fileRef = AA7690B724E2943200464683 /* Demo3.metal */; };
 		AA7690BB24E294B500464683 /* Demo3Adder.m in Sources */ = {isa = PBXBuildFile; fileRef = AA7690BA24E294B500464683 /* Demo3Adder.m */; };
+		AA7690C224E3F58400464683 /* DVCRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = AA7690C124E3F58400464683 /* DVCRenderer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +66,9 @@
 		AA03494924D7FF6A00E9E964 /* HorseRaceLampVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HorseRaceLampVC.m; sourceTree = "<group>"; };
 		AA03494B24D81BDF00E9E964 /* HorseRaceLampRenderer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HorseRaceLampRenderer.h; sourceTree = "<group>"; };
 		AA03494C24D81BDF00E9E964 /* HorseRaceLampRenderer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HorseRaceLampRenderer.m; sourceTree = "<group>"; };
+		AA12BED724E4DC270011F244 /* DVCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DVCViewController.h; sourceTree = "<group>"; };
+		AA12BED824E4DC270011F244 /* DVCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DVCViewController.m; sourceTree = "<group>"; };
+		AA12BED924E4DC270011F244 /* DVCViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DVCViewController.xib; sourceTree = "<group>"; };
 		AA3F7B0824D9707E00B2519E /* TriangleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TriangleViewController.h; sourceTree = "<group>"; };
 		AA3F7B0924D9707E00B2519E /* TriangleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TriangleViewController.m; sourceTree = "<group>"; };
 		AA3F7B0D24D972D400B2519E /* TriangleShader.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = TriangleShader.metal; sourceTree = "<group>"; };
@@ -72,6 +78,8 @@
 		AA7690B724E2943200464683 /* Demo3.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Demo3.metal; sourceTree = "<group>"; };
 		AA7690B924E294B500464683 /* Demo3Adder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Demo3Adder.h; sourceTree = "<group>"; };
 		AA7690BA24E294B500464683 /* Demo3Adder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Demo3Adder.m; sourceTree = "<group>"; };
+		AA7690C024E3F58300464683 /* DVCRenderer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DVCRenderer.h; sourceTree = "<group>"; };
+		AA7690C124E3F58400464683 /* DVCRenderer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DVCRenderer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +130,7 @@
 		AA03491224D7F09400E9E964 /* MetalDemo */ = {
 			isa = PBXGroup;
 			children = (
+				AA7690BC24E3F37500464683 /* DrawViewContent */,
 				AA7690B624E2927500464683 /* CalculationsGPU */,
 				AA3F7B0C24D971E000B2519E /* Triangle */,
 				AA3F7B0B24D971C600B2519E /* HorseRaceLamp */,
@@ -198,6 +207,18 @@
 			);
 			path = CalculationsGPU;
 			sourceTree = SOURCE_ROOT;
+		};
+		AA7690BC24E3F37500464683 /* DrawViewContent */ = {
+			isa = PBXGroup;
+			children = (
+				AA7690C024E3F58300464683 /* DVCRenderer.h */,
+				AA7690C124E3F58400464683 /* DVCRenderer.m */,
+				AA12BED724E4DC270011F244 /* DVCViewController.h */,
+				AA12BED824E4DC270011F244 /* DVCViewController.m */,
+				AA12BED924E4DC270011F244 /* DVCViewController.xib */,
+			);
+			path = DrawViewContent;
+			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
@@ -304,6 +325,7 @@
 			files = (
 				AA03492324D7F09700E9E964 /* LaunchScreen.storyboard in Resources */,
 				AA03492024D7F09700E9E964 /* Assets.xcassets in Resources */,
+				AA12BEDB24E4DC270011F244 /* DVCViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -331,10 +353,12 @@
 				AA03491B24D7F09400E9E964 /* ViewController.m in Sources */,
 				AA03494D24D81BDF00E9E964 /* HorseRaceLampRenderer.m in Sources */,
 				AA3F7B1124D97BB200B2519E /* TriangleRenderer.m in Sources */,
+				AA12BEDA24E4DC270011F244 /* DVCViewController.m in Sources */,
 				AA3F7B0E24D972D400B2519E /* TriangleShader.metal in Sources */,
 				AA3F7B0A24D9707E00B2519E /* TriangleViewController.m in Sources */,
 				AA03491524D7F09400E9E964 /* AppDelegate.m in Sources */,
 				AA7690B824E2943200464683 /* Demo3.metal in Sources */,
+				AA7690C224E3F58400464683 /* DVCRenderer.m in Sources */,
 				AA03492624D7F09700E9E964 /* main.m in Sources */,
 				AA03491824D7F09400E9E964 /* SceneDelegate.m in Sources */,
 				AA7690BB24E294B500464683 /* Demo3Adder.m in Sources */,
@@ -500,13 +524,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = WJHCHE23MA;
+				DEVELOPMENT_TEAM = 69S36A93WW;
 				INFOPLIST_FILE = MetalDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = tv.danmaku.bilianime;
+				PRODUCT_BUNDLE_IDENTIFIER = bundle.metal.idler;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -517,13 +541,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = WJHCHE23MA;
+				DEVELOPMENT_TEAM = 69S36A93WW;
 				INFOPLIST_FILE = MetalDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = tv.danmaku.bilianime;
+				PRODUCT_BUNDLE_IDENTIFIER = bundle.metal.idler;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
