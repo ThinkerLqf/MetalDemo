@@ -22,7 +22,7 @@
 
 - (void)viewDidLoad {
     /*
-    怎样可以设置大括号另起一行，跟Apple官方文档中的格式一样。
+     怎样可以设置大括号另起一行，跟Apple官方文档中的格式一样。
      查到一个方法，需要搞一个插件https://github.com/travisjeffery/ClangFormat-Xcode
      有时间了试一下
      */
@@ -45,7 +45,10 @@
         return;
     }
     
-    [_renderer mtkView:_mtkView drawableSizeWillChange:_mtkView.drawableSize];
+    /*
+     还不太清楚该行代码的具体作用。注释掉之后仍会触发一次渲染。
+     */
+    //[_renderer mtkView:_mtkView drawableSizeWillChange:_mtkView.drawableSize];
     
     _mtkView.delegate = _renderer;
     
