@@ -11,6 +11,7 @@
 #import "TriangleViewController.h"
 #import "Demo3Adder.h"
 #import "DVCViewController.h"
+#import "HTVC.h"
 #import <MetalKit/MetalKit.h>
 
 @interface ViewController ()
@@ -49,20 +50,21 @@
     
     // btn2
     CGFloat vGap = 0.f;
-    CGFloat y2 = y1 + h + vGap;
+    CGFloat cellHeight = (vGap + h);
+    CGFloat y2 = y1 + cellHeight;
     CGRect rect2 = CGRectMake(x, y2, w, h);
     
-    UIButton *btn2 = [self _qfButtonWithTitle:@"三角形(错误示范)"
+    UIButton *btn2 = [self _qfButtonWithTitle:@"三角形\n建议使用官3的方式绘制"
                                       frame:rect2
                                      action:@selector(_qfTriangle)];
     [btn2 setTitleColor:[UIColor lightGrayColor] forState:UIControlStateDisabled];
-    [btn2 setEnabled:NO];
+//    [btn2 setEnabled:NO];
     [scrollView addSubview:btn2];
     
-    contentHeight += (vGap + h);
+    contentHeight += cellHeight;
     
     // btn3
-    CGFloat y3 = y2 + vGap + h;
+    CGFloat y3 = y2 + cellHeight;
     CGRect rect3 = CGRectMake(x, y3, w, h);
     
     UIButton *btn3 = [self _qfButtonWithTitle:@" 官1:Performing Calculations on a GPU.\n备注:只能真机"
@@ -71,22 +73,38 @@
     [btn3.titleLabel setNumberOfLines:2];
     [scrollView addSubview:btn3];
     
-    contentHeight += (vGap + h);
+    contentHeight += cellHeight;
     
     // btn4
-    CGFloat y4 = y3 + vGap + h;
+    CGFloat y4 = y3 + cellHeight;
     CGRect rect4 = CGRectMake(x, y4, w, h);
     UIButton *btn4 = [self _qfButtonWithTitle:@"官2:Using Metal to Draw a View’s Contents"
                                         frame:rect4
                                        action:@selector(_qfUsingMetalToDrawAViewContents)];
     [scrollView addSubview:btn4];
     
-    contentHeight += (vGap + h);
+    contentHeight += cellHeight;
+    
+    // btn5
+    CGFloat y5 = y4 + cellHeight;
+    CGRect rect5 = CGRectMake(x, y5, w, h);
+    UIButton *btn5 = [self _qfButtonWithTitle:@"官3:Using A Render Pipeline To Render Primitives"
+                                        frame:rect5
+                                       action:@selector(_qfUsingARenderPipelineToRenderPrimitives)];
+    [scrollView addSubview:btn5];
+    
+    contentHeight += cellHeight;
     
     [scrollView setContentSize:CGSizeMake(screenSize.width, MAX(contentHeight, scrollRect.size.height))];
 }
 
 #pragma mark - Action
+
+#pragma mark - 官方demo 3
+
+- (void)_qfUsingARenderPipelineToRenderPrimitives {
+    [self.navigationController pushViewController:[[HTVC alloc] init] animated:YES];
+}
 
 #pragma mark - 官方demo 2
 

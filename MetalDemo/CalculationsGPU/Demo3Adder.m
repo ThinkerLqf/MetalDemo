@@ -116,11 +116,14 @@ const unsigned int bufferSize = arrayLength * sizeof(float);
 /// 发现使用模拟器进行调试时结果不符合预期，加了该函数对比确认了.metal函数没有正常调用。只能真机
 - (void)_generateRandomResultData
 {
+#if TARGET_IPHONE_SIMULATOR
+#else
     float *dataPtr = _mBufferResult.contents;
     
     for (unsigned long index = 0; index < arrayLength; index++) {
         dataPtr[index] = 0.11111;
     }
+#endif
 }
 
 #pragma mark - Compute Pass
@@ -162,7 +165,8 @@ const unsigned int bufferSize = arrayLength * sizeof(float);
     [computerEncoder setBuffer:_mBufferA offset:0 atIndex:0];
     [computerEncoder setBuffer:_mBufferB offset:0 atIndex:1];
     [computerEncoder setBuffer:_mBufferResult offset:0 atIndex:2];
-    
+#if TARGET_IPHONE_SIMULATOR
+#else
     /* 真机 特有, 模拟不支持*/
     // 指定线程数 以及 以一维的方式组织线程
     MTLSize gridSize = MTLSizeMake(arrayLength, 1, 1);
@@ -178,10 +182,13 @@ const unsigned int bufferSize = arrayLength * sizeof(float);
     
     // 分派线程网格
     [computerEncoder dispatchThreads:gridSize threadsPerThreadgroup:threadgroupSize];
+#endif
 }
 
 - (void)_verifyResults
 {
+#if TARGET_IPHONE_SIMULATOR
+#else
     float *a = _mBufferA.contents;
     float *b = _mBufferB.contents;
     float *result = _mBufferResult.contents;
@@ -203,6 +210,7 @@ const unsigned int bufferSize = arrayLength * sizeof(float);
     NSArray<UIWindow *> *windows = [UIApplication sharedApplication].windows;
     UIViewController *rootVC = windows.firstObject.rootViewController;
     [rootVC presentViewController:alertC animated:NO completion:nil];
+#endif
 }
 
 @end

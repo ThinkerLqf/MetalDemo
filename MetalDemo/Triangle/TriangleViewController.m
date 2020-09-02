@@ -60,6 +60,7 @@
         _mtkView.depthStencilPixelFormat = MTLPixelFormatDepth32Float_Stencil8;
         _mtkView.colorPixelFormat = MTLPixelFormatBGRA8Unorm_sRGB;
         _mtkView.sampleCount = 1;
+        _mtkView.enableSetNeedsDisplay = YES;
     }
     return _mtkView;
 }

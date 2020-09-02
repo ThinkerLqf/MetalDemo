@@ -15,16 +15,23 @@
 		AA03492624D7F09700E9E964 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AA03492524D7F09700E9E964 /* main.m */; };
 		AA03493024D7F09700E9E964 /* MetalDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AA03492F24D7F09700E9E964 /* MetalDemoTests.m */; };
 		AA03493B24D7F09700E9E964 /* MetalDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = AA03493A24D7F09700E9E964 /* MetalDemoUITests.m */; };
-		AA03494A24D7FF6A00E9E964 /* HorseRaceLampVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AA03494924D7FF6A00E9E964 /* HorseRaceLampVC.m */; };
-		AA03494D24D81BDF00E9E964 /* HorseRaceLampRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = AA03494C24D81BDF00E9E964 /* HorseRaceLampRenderer.m */; };
-		AA12BEDA24E4DC270011F244 /* DVCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA12BED824E4DC270011F244 /* DVCViewController.m */; };
-		AA12BEDB24E4DC270011F244 /* DVCViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA12BED924E4DC270011F244 /* DVCViewController.xib */; };
-		AA3F7B0A24D9707E00B2519E /* TriangleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA3F7B0924D9707E00B2519E /* TriangleViewController.m */; };
-		AA3F7B0E24D972D400B2519E /* TriangleShader.metal in Sources */ = {isa = PBXBuildFile; fileRef = AA3F7B0D24D972D400B2519E /* TriangleShader.metal */; };
-		AA3F7B1124D97BB200B2519E /* TriangleRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = AA3F7B1024D97BB200B2519E /* TriangleRenderer.m */; };
-		AA7690B824E2943200464683 /* Demo3.metal in Sources */ = {isa = PBXBuildFile; fileRef = AA7690B724E2943200464683 /* Demo3.metal */; };
-		AA7690BB24E294B500464683 /* Demo3Adder.m in Sources */ = {isa = PBXBuildFile; fileRef = AA7690BA24E294B500464683 /* Demo3Adder.m */; };
-		AA7690C224E3F58400464683 /* DVCRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = AA7690C124E3F58400464683 /* DVCRenderer.m */; };
+		AA0D1A0924F8DE5E0042B744 /* HTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AA0D1A0724F8DE5E0042B744 /* HTVC.m */; };
+		AA0D1A0A24F8DE5E0042B744 /* HTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA0D1A0824F8DE5E0042B744 /* HTVC.xib */; };
+		AA0D1A0D24F8DEFF0042B744 /* HTShaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = AA0D1A0C24F8DEFF0042B744 /* HTShaders.metal */; };
+		AA0D1A1024F8DF110042B744 /* HTRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = AA0D1A0F24F8DF110042B744 /* HTRenderer.m */; };
+		AA0D1A1224F8EAC90042B744 /* RenderPrimitives.md in Resources */ = {isa = PBXBuildFile; fileRef = AA0D1A1124F8EAC90042B744 /* RenderPrimitives.md */; };
+		AA6D629624FF8CED005B6941 /* Readme.md in Resources */ = {isa = PBXBuildFile; fileRef = AA6D629524FF8CED005B6941 /* Readme.md */; };
+		AA8282DD24F9183500752F86 /* Calculation.md in Resources */ = {isa = PBXBuildFile; fileRef = AA8282DC24F9183500752F86 /* Calculation.md */; };
+		AAAEEDE224F3D62D006377BC /* HorseRaceLampVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AAAEEDE024F3D62D006377BC /* HorseRaceLampVC.m */; };
+		AAAEEDE324F3D62D006377BC /* HorseRaceLampRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = AAAEEDE124F3D62D006377BC /* HorseRaceLampRenderer.m */; };
+		AAAEEDEB24F3D63B006377BC /* TriangleRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = AAAEEDE524F3D63B006377BC /* TriangleRenderer.m */; };
+		AAAEEDEC24F3D63B006377BC /* TriangleShader.metal in Sources */ = {isa = PBXBuildFile; fileRef = AAAEEDE724F3D63B006377BC /* TriangleShader.metal */; };
+		AAAEEDED24F3D63B006377BC /* TriangleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AAAEEDE824F3D63B006377BC /* TriangleViewController.m */; };
+		AAAEEDF224F3D63E006377BC /* Demo3Adder.m in Sources */ = {isa = PBXBuildFile; fileRef = AAAEEDEF24F3D63E006377BC /* Demo3Adder.m */; };
+		AAAEEDF324F3D63E006377BC /* Demo3.metal in Sources */ = {isa = PBXBuildFile; fileRef = AAAEEDF024F3D63E006377BC /* Demo3.metal */; };
+		AAAEEDFA24F3D64A006377BC /* DVCRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = AAAEEDF524F3D64A006377BC /* DVCRenderer.m */; };
+		AAAEEDFB24F3D64A006377BC /* DVCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AAAEEDF624F3D64A006377BC /* DVCViewController.m */; };
+		AAAEEDFC24F3D64A006377BC /* DVCViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AAAEEDF724F3D64A006377BC /* DVCViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,24 +69,34 @@
 		AA03493624D7F09700E9E964 /* MetalDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MetalDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA03493A24D7F09700E9E964 /* MetalDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MetalDemoUITests.m; sourceTree = "<group>"; };
 		AA03493C24D7F09700E9E964 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AA03494824D7FF6A00E9E964 /* HorseRaceLampVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HorseRaceLampVC.h; sourceTree = "<group>"; };
-		AA03494924D7FF6A00E9E964 /* HorseRaceLampVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HorseRaceLampVC.m; sourceTree = "<group>"; };
-		AA03494B24D81BDF00E9E964 /* HorseRaceLampRenderer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HorseRaceLampRenderer.h; sourceTree = "<group>"; };
-		AA03494C24D81BDF00E9E964 /* HorseRaceLampRenderer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HorseRaceLampRenderer.m; sourceTree = "<group>"; };
-		AA12BED724E4DC270011F244 /* DVCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DVCViewController.h; sourceTree = "<group>"; };
-		AA12BED824E4DC270011F244 /* DVCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DVCViewController.m; sourceTree = "<group>"; };
-		AA12BED924E4DC270011F244 /* DVCViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DVCViewController.xib; sourceTree = "<group>"; };
-		AA3F7B0824D9707E00B2519E /* TriangleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TriangleViewController.h; sourceTree = "<group>"; };
-		AA3F7B0924D9707E00B2519E /* TriangleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TriangleViewController.m; sourceTree = "<group>"; };
-		AA3F7B0D24D972D400B2519E /* TriangleShader.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = TriangleShader.metal; sourceTree = "<group>"; };
-		AA3F7B0F24D97BB200B2519E /* TriangleRenderer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TriangleRenderer.h; sourceTree = "<group>"; };
-		AA3F7B1024D97BB200B2519E /* TriangleRenderer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TriangleRenderer.m; sourceTree = "<group>"; };
-		AA3F7B1224DA930F00B2519E /* TriangleShaderTypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TriangleShaderTypes.h; sourceTree = "<group>"; };
-		AA7690B724E2943200464683 /* Demo3.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Demo3.metal; sourceTree = "<group>"; };
-		AA7690B924E294B500464683 /* Demo3Adder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Demo3Adder.h; sourceTree = "<group>"; };
-		AA7690BA24E294B500464683 /* Demo3Adder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Demo3Adder.m; sourceTree = "<group>"; };
-		AA7690C024E3F58300464683 /* DVCRenderer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DVCRenderer.h; sourceTree = "<group>"; };
-		AA7690C124E3F58400464683 /* DVCRenderer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DVCRenderer.m; sourceTree = "<group>"; };
+		AA0D1A0624F8DE5E0042B744 /* HTVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HTVC.h; sourceTree = "<group>"; };
+		AA0D1A0724F8DE5E0042B744 /* HTVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HTVC.m; sourceTree = "<group>"; };
+		AA0D1A0824F8DE5E0042B744 /* HTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HTVC.xib; sourceTree = "<group>"; };
+		AA0D1A0B24F8DEEB0042B744 /* HTShaderTypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HTShaderTypes.h; sourceTree = "<group>"; };
+		AA0D1A0C24F8DEFF0042B744 /* HTShaders.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = HTShaders.metal; sourceTree = "<group>"; };
+		AA0D1A0E24F8DF110042B744 /* HTRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTRenderer.h; sourceTree = "<group>"; };
+		AA0D1A0F24F8DF110042B744 /* HTRenderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTRenderer.m; sourceTree = "<group>"; };
+		AA0D1A1124F8EAC90042B744 /* RenderPrimitives.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = RenderPrimitives.md; sourceTree = "<group>"; };
+		AA6D629524FF8CED005B6941 /* Readme.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = Readme.md; sourceTree = "<group>"; };
+		AA8282DC24F9183500752F86 /* Calculation.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = Calculation.md; path = /Users/bilibili/MetalDemo/MetalDemo/CalculationsGPU/Calculation.md; sourceTree = "<absolute>"; };
+		AAAEEDDE24F3D62D006377BC /* HorseRaceLampRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HorseRaceLampRenderer.h; sourceTree = "<group>"; };
+		AAAEEDDF24F3D62D006377BC /* HorseRaceLampVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HorseRaceLampVC.h; sourceTree = "<group>"; };
+		AAAEEDE024F3D62D006377BC /* HorseRaceLampVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HorseRaceLampVC.m; sourceTree = "<group>"; };
+		AAAEEDE124F3D62D006377BC /* HorseRaceLampRenderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HorseRaceLampRenderer.m; sourceTree = "<group>"; };
+		AAAEEDE524F3D63B006377BC /* TriangleRenderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TriangleRenderer.m; sourceTree = "<group>"; };
+		AAAEEDE624F3D63B006377BC /* TriangleShaderTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TriangleShaderTypes.h; sourceTree = "<group>"; };
+		AAAEEDE724F3D63B006377BC /* TriangleShader.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = TriangleShader.metal; sourceTree = "<group>"; };
+		AAAEEDE824F3D63B006377BC /* TriangleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TriangleViewController.m; sourceTree = "<group>"; };
+		AAAEEDE924F3D63B006377BC /* TriangleRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TriangleRenderer.h; sourceTree = "<group>"; };
+		AAAEEDEA24F3D63B006377BC /* TriangleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TriangleViewController.h; sourceTree = "<group>"; };
+		AAAEEDEF24F3D63E006377BC /* Demo3Adder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Demo3Adder.m; sourceTree = "<group>"; };
+		AAAEEDF024F3D63E006377BC /* Demo3.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = Demo3.metal; sourceTree = "<group>"; };
+		AAAEEDF124F3D63E006377BC /* Demo3Adder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Demo3Adder.h; sourceTree = "<group>"; };
+		AAAEEDF524F3D64A006377BC /* DVCRenderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DVCRenderer.m; sourceTree = "<group>"; };
+		AAAEEDF624F3D64A006377BC /* DVCViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DVCViewController.m; sourceTree = "<group>"; };
+		AAAEEDF724F3D64A006377BC /* DVCViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DVCViewController.xib; sourceTree = "<group>"; };
+		AAAEEDF824F3D64A006377BC /* DVCViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVCViewController.h; sourceTree = "<group>"; };
+		AAAEEDF924F3D64A006377BC /* DVCRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVCRenderer.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,11 +147,11 @@
 		AA03491224D7F09400E9E964 /* MetalDemo */ = {
 			isa = PBXGroup;
 			children = (
-				AA7690BC24E3F37500464683 /* DrawViewContent */,
-				AA7690B624E2927500464683 /* CalculationsGPU */,
-				AA3F7B0C24D971E000B2519E /* Triangle */,
-				AA3F7B0B24D971C600B2519E /* HorseRaceLamp */,
-				AA03494E24D81C0F00E9E964 /* Renderer */,
+				AA0D1A0524F8DE4E0042B744 /* HelloTriangle */,
+				AAAEEDF424F3D64A006377BC /* DrawViewContent */,
+				AAAEEDEE24F3D63E006377BC /* CalculationsGPU */,
+				AAAEEDE424F3D63B006377BC /* Triangle */,
+				AAAEEDDD24F3D62D006377BC /* HorseRaceLamp */,
 				AA03491324D7F09400E9E964 /* AppDelegate.h */,
 				AA03491424D7F09400E9E964 /* AppDelegate.m */,
 				AA03491624D7F09400E9E964 /* SceneDelegate.h */,
@@ -167,55 +184,65 @@
 			path = MetalDemoUITests;
 			sourceTree = "<group>";
 		};
-		AA03494E24D81C0F00E9E964 /* Renderer */ = {
+		AA0D1A0524F8DE4E0042B744 /* HelloTriangle */ = {
 			isa = PBXGroup;
 			children = (
+				AA0D1A0E24F8DF110042B744 /* HTRenderer.h */,
+				AA0D1A0F24F8DF110042B744 /* HTRenderer.m */,
+				AA0D1A0C24F8DEFF0042B744 /* HTShaders.metal */,
+				AA0D1A0B24F8DEEB0042B744 /* HTShaderTypes.h */,
+				AA0D1A0624F8DE5E0042B744 /* HTVC.h */,
+				AA0D1A0724F8DE5E0042B744 /* HTVC.m */,
+				AA0D1A0824F8DE5E0042B744 /* HTVC.xib */,
+				AA0D1A1124F8EAC90042B744 /* RenderPrimitives.md */,
 			);
-			path = Renderer;
+			path = HelloTriangle;
 			sourceTree = "<group>";
 		};
-		AA3F7B0B24D971C600B2519E /* HorseRaceLamp */ = {
+		AAAEEDDD24F3D62D006377BC /* HorseRaceLamp */ = {
 			isa = PBXGroup;
 			children = (
-				AA03494B24D81BDF00E9E964 /* HorseRaceLampRenderer.h */,
-				AA03494C24D81BDF00E9E964 /* HorseRaceLampRenderer.m */,
-				AA03494824D7FF6A00E9E964 /* HorseRaceLampVC.h */,
-				AA03494924D7FF6A00E9E964 /* HorseRaceLampVC.m */,
+				AAAEEDDE24F3D62D006377BC /* HorseRaceLampRenderer.h */,
+				AAAEEDE124F3D62D006377BC /* HorseRaceLampRenderer.m */,
+				AAAEEDDF24F3D62D006377BC /* HorseRaceLampVC.h */,
+				AAAEEDE024F3D62D006377BC /* HorseRaceLampVC.m */,
 			);
 			path = HorseRaceLamp;
-			sourceTree = SOURCE_ROOT;
+			sourceTree = "<group>";
 		};
-		AA3F7B0C24D971E000B2519E /* Triangle */ = {
+		AAAEEDE424F3D63B006377BC /* Triangle */ = {
 			isa = PBXGroup;
 			children = (
-				AA3F7B0824D9707E00B2519E /* TriangleViewController.h */,
-				AA3F7B0924D9707E00B2519E /* TriangleViewController.m */,
-				AA3F7B0F24D97BB200B2519E /* TriangleRenderer.h */,
-				AA3F7B1024D97BB200B2519E /* TriangleRenderer.m */,
-				AA3F7B0D24D972D400B2519E /* TriangleShader.metal */,
-				AA3F7B1224DA930F00B2519E /* TriangleShaderTypes.h */,
+				AAAEEDE924F3D63B006377BC /* TriangleRenderer.h */,
+				AAAEEDE524F3D63B006377BC /* TriangleRenderer.m */,
+				AAAEEDE724F3D63B006377BC /* TriangleShader.metal */,
+				AAAEEDE624F3D63B006377BC /* TriangleShaderTypes.h */,
+				AAAEEDEA24F3D63B006377BC /* TriangleViewController.h */,
+				AAAEEDE824F3D63B006377BC /* TriangleViewController.m */,
 			);
 			path = Triangle;
-			sourceTree = SOURCE_ROOT;
+			sourceTree = "<group>";
 		};
-		AA7690B624E2927500464683 /* CalculationsGPU */ = {
+		AAAEEDEE24F3D63E006377BC /* CalculationsGPU */ = {
 			isa = PBXGroup;
 			children = (
-				AA7690B724E2943200464683 /* Demo3.metal */,
-				AA7690B924E294B500464683 /* Demo3Adder.h */,
-				AA7690BA24E294B500464683 /* Demo3Adder.m */,
+				AA8282DC24F9183500752F86 /* Calculation.md */,
+				AAAEEDF024F3D63E006377BC /* Demo3.metal */,
+				AAAEEDF124F3D63E006377BC /* Demo3Adder.h */,
+				AAAEEDEF24F3D63E006377BC /* Demo3Adder.m */,
 			);
 			path = CalculationsGPU;
-			sourceTree = SOURCE_ROOT;
+			sourceTree = "<group>";
 		};
-		AA7690BC24E3F37500464683 /* DrawViewContent */ = {
+		AAAEEDF424F3D64A006377BC /* DrawViewContent */ = {
 			isa = PBXGroup;
 			children = (
-				AA7690C024E3F58300464683 /* DVCRenderer.h */,
-				AA7690C124E3F58400464683 /* DVCRenderer.m */,
-				AA12BED724E4DC270011F244 /* DVCViewController.h */,
-				AA12BED824E4DC270011F244 /* DVCViewController.m */,
-				AA12BED924E4DC270011F244 /* DVCViewController.xib */,
+				AA6D629524FF8CED005B6941 /* Readme.md */,
+				AAAEEDF924F3D64A006377BC /* DVCRenderer.h */,
+				AAAEEDF524F3D64A006377BC /* DVCRenderer.m */,
+				AAAEEDF824F3D64A006377BC /* DVCViewController.h */,
+				AAAEEDF624F3D64A006377BC /* DVCViewController.m */,
+				AAAEEDF724F3D64A006377BC /* DVCViewController.xib */,
 			);
 			path = DrawViewContent;
 			sourceTree = "<group>";
@@ -323,9 +350,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA8282DD24F9183500752F86 /* Calculation.md in Resources */,
 				AA03492324D7F09700E9E964 /* LaunchScreen.storyboard in Resources */,
 				AA03492024D7F09700E9E964 /* Assets.xcassets in Resources */,
-				AA12BEDB24E4DC270011F244 /* DVCViewController.xib in Resources */,
+				AA6D629624FF8CED005B6941 /* Readme.md in Resources */,
+				AA0D1A1224F8EAC90042B744 /* RenderPrimitives.md in Resources */,
+				AA0D1A0A24F8DE5E0042B744 /* HTVC.xib in Resources */,
+				AAAEEDFC24F3D64A006377BC /* DVCViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -350,19 +381,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AAAEEDFA24F3D64A006377BC /* DVCRenderer.m in Sources */,
 				AA03491B24D7F09400E9E964 /* ViewController.m in Sources */,
-				AA03494D24D81BDF00E9E964 /* HorseRaceLampRenderer.m in Sources */,
-				AA3F7B1124D97BB200B2519E /* TriangleRenderer.m in Sources */,
-				AA12BEDA24E4DC270011F244 /* DVCViewController.m in Sources */,
-				AA3F7B0E24D972D400B2519E /* TriangleShader.metal in Sources */,
-				AA3F7B0A24D9707E00B2519E /* TriangleViewController.m in Sources */,
+				AAAEEDE324F3D62D006377BC /* HorseRaceLampRenderer.m in Sources */,
+				AAAEEDFB24F3D64A006377BC /* DVCViewController.m in Sources */,
+				AAAEEDF324F3D63E006377BC /* Demo3.metal in Sources */,
+				AAAEEDEC24F3D63B006377BC /* TriangleShader.metal in Sources */,
+				AA0D1A0924F8DE5E0042B744 /* HTVC.m in Sources */,
+				AAAEEDEB24F3D63B006377BC /* TriangleRenderer.m in Sources */,
 				AA03491524D7F09400E9E964 /* AppDelegate.m in Sources */,
-				AA7690B824E2943200464683 /* Demo3.metal in Sources */,
-				AA7690C224E3F58400464683 /* DVCRenderer.m in Sources */,
 				AA03492624D7F09700E9E964 /* main.m in Sources */,
+				AA0D1A1024F8DF110042B744 /* HTRenderer.m in Sources */,
+				AA0D1A0D24F8DEFF0042B744 /* HTShaders.metal in Sources */,
 				AA03491824D7F09400E9E964 /* SceneDelegate.m in Sources */,
-				AA7690BB24E294B500464683 /* Demo3Adder.m in Sources */,
-				AA03494A24D7FF6A00E9E964 /* HorseRaceLampVC.m in Sources */,
+				AAAEEDF224F3D63E006377BC /* Demo3Adder.m in Sources */,
+				AAAEEDED24F3D63B006377BC /* TriangleViewController.m in Sources */,
+				AAAEEDE224F3D62D006377BC /* HorseRaceLampVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
